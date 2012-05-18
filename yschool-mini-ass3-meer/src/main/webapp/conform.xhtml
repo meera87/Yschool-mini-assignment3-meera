@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h2> Add Student Marks</h2>
+        <h:form>
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Student Name:</td>
+                        <td> <h:outputText value="#{studentBean.sname}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Grade:</td>
+                        <td><h:outputText value="#{studentBean.grade}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Subject:</td>
+                        <td> <h:outputText value="#{studentBean.subject}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Marks:</td>
+                        <td><h:outputText value="#{studentBean.marks}"/></td>
+                    </tr>
+                    <tr>
+
+                        <td><h:commandButton value="Conform" action="response" /></td>
+                        <td> <h:commandButton value="Edit" action="index" /></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </h:form>
+    </h:body>
+</html>
+
